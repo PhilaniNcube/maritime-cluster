@@ -17,22 +17,20 @@ const Team: NextPage = () => {
       <main className="py-8 bg-center bg-cover bg-no-repeat min-h-screen ">
         <BlackNavbar />
         <div className="max-w-7xl mx-auto flex flex-col justify-center min-h-[50vh] items-center border-t border-b border-black">
-          <div className="grid grid-cols-5">
+          <div className="grid grid-cols-5 h-[50vh]  mb-5">
             <div className="col-span-5 md:col-span-2 relative">
-              <div className="absolute z-30 inset-0 flex justify-end p-6">
+              <div className="absolute z-30 top-0 right-0 flex justify-end p-6">
                 <h1 className="font-bold text-white text-3xl md:text-5xl lg:text-6xl">
                   Our Team
                 </h1>
               </div>
-              <Image
-                src="/images/ship.jpg"
+              <img
+                src="/images/team.jpg"
                 alt="Ship"
-                className="w-full object-cover"
-                width={1500}
-                height={999}
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="col-span-5 md:col-span-3 p-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="col-span-5 md:col-span-3 p-4 grid grid-cols-2 md:grid-cols-3 gap-4 overflow-y-scroll">
               <div className="w-full">
                 <Image
                   src="/images/faisal.jpeg"
@@ -125,7 +123,7 @@ const Team: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="relative w-full">
+          <div className="relative mt-8 w-full">
             <img
               src="/images/boat.jpg"
               alt="boat"
@@ -137,8 +135,7 @@ const Team: NextPage = () => {
               <p className="text-xl font-bold text-gray-700 italic max-w-[55ch]">
                 'The Ocean is Everyone's Business' <br />
                 <span className="text-sm">
-                  Peter Myles, past Chairperson and founding member of the
-                  MBMC
+                  Peter Myles, past Chairperson and founding member of the MBMC
                 </span>
               </p>
             </div>
@@ -148,77 +145,54 @@ const Team: NextPage = () => {
               Our Partners
             </h2>
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 py-6">
-              <div className="bg-gray-100 rounded flex flex-col justify-center items-center h-36">
+              <div className=" rounded flex flex-col justify-center items-center h-36">
                 <img
-                  src="/images/icons/svg/005-zoom.svg"
-                  className="h-16 w-16"
+                  src="/images/saimi.png"
+                  className="h-16 object-cover"
                 />
-                <p className="text-xl text-center text-gray-800 font-bold mt-2">
-                  SAIMI
-                </p>
+
               </div>
-              <div className="bg-gray-100 rounded flex flex-col justify-center items-center h-36">
+              <div className=" rounded flex flex-col justify-center items-center h-36">
                 <img
-                  src="/images/icons/svg/011-bar chart.svg"
-                  className="h-16 w-16"
+                  src="/images/chamber.png"
+                  className="h-16 object-cover"
                 />
-                <p className="text-xl text-center text-gray-800 font-bold mt-2">
-                  Nelson Mandela Bay Business Chamber
-                </p>
+
               </div>
-              <div className="bg-gray-100 rounded flex flex-col justify-center items-center h-36">
+              <div className=" rounded flex flex-col justify-center items-center h-36">
                 <img
-                  src="/images/icons/svg/009-high temperature.svg"
-                  className="h-16 w-16"
+                  src="/images/nmu.png"
+                  className="w-full object-cover"
                 />
-                <p className="text-xl text-center text-gray-800 font-bold mt-2">
-                  Nelson Mandela University
-                </p>
+
               </div>
-              <div className="bg-gray-100 rounded flex flex-col justify-center items-center h-36">
+
+              <div className=" rounded flex flex-col justify-center items-center h-36">
                 <img
-                  src="/images/icons/svg/014-resize.svg"
-                  className="h-16 w-16"
+                  src="/images/nmbm.png"
+                  className="h-16 object-cover"
                 />{" "}
-                <p className="text-xl text-center text-gray-800 font-bold mt-2">
-                  Nelson Mandela University
-                </p>
+
               </div>
-              <div className="bg-gray-100 rounded flex flex-col justify-center items-center h-36">
+              <div className=" rounded flex flex-col justify-center items-center h-36">
                 <img
-                  src="/images/icons/svg/001-heart rate.svg"
-                  className="h-16 w-16"
+                  src="/images/transnet.png"
+                  className="h-full object-cover"
                 />{" "}
-                <p className="text-xl text-center text-gray-800 font-bold mt-2">
-                  Nelson Mandela Bay Municipality
-                </p>
+
               </div>
-              <div className="bg-gray-100 rounded flex flex-col justify-center items-center h-36">
+              <div className=" rounded flex flex-col justify-center items-center h-36">
                 <img
-                  src="/images/icons/svg/001-heart rate.svg"
-                  className="h-16 w-16"
-                />{" "}
-                <p className="text-xl text-center text-gray-800 font-bold mt-2">
-                  Transnet and TNPA
-                </p>
+                  src="/images/rial.jpeg"
+                  className="w-3/4 object-cover"
+                />
               </div>
-              <div className="bg-gray-100 rounded flex flex-col justify-center items-center h-36">
+              <div className=" rounded flex flex-col justify-center items-center h-36">
                 <img
-                  src="/images/icons/svg/001-heart rate.svg"
-                  className="h-16 w-16"
+                  src="/images/coega.png"
+                  className="w-2/5 object-cover"
                 />{" "}
-                <p className="text-xl text-center text-gray-800 font-bold mt-2">
-                  Rial Fishing (Pty) Ltd
-                </p>
-              </div>
-              <div className="bg-gray-100 rounded flex flex-col justify-center items-center h-36">
-                <img
-                  src="/images/icons/svg/001-heart rate.svg"
-                  className="h-16 w-16"
-                />{" "}
-                <p className="text-xl text-center text-gray-800 font-bold mt-2">
-                  Coega Development Corporation
-                </p>
+
               </div>
             </div>
           </div>

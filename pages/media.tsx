@@ -16,10 +16,10 @@ const Media: NextPage = () => {
       </Head>
       <main className="py-8 min-h-screen ">
         <BlackNavbar />
-        <div className="max-w-7xl mx-auto items-center border-t border-b border-black">
+        <div className="max-w-7xl mx-auto items-center border-t border-spacing-3 border-b border-black">
           <div className="grid grid-cols-5">
             <div className="col-span-5 grid grid-cols-2 relative">
-              <div className="absolute w-1/2 inset-0 flex flex-col items-end bg-slate-800/70 p-3">
+              <div className="absolute w-1/2 inset-0 flex flex-col items-end justify-center bg-slate-800/70 p-3">
                 <h1 className="font-bold text-white text-3xl text-right md:text-5xl lg:text-6xl">
                   Media <br /> Room
                 </h1>
@@ -29,7 +29,7 @@ const Media: NextPage = () => {
                 </p>
               </div>
               <img
-                src="/images/controller.jpg"
+                src="/images/media.jpg"
                 alt="Media"
                 className="w-full h-80 object-cover col-span-2"
                 width={1400}
@@ -37,25 +37,28 @@ const Media: NextPage = () => {
               />
             </div>
           </div>
-          <div className="max-w-7xl mx-auto">
-            <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 mt-3">
+          <div className="max-w-7xl mx-auto ">
+            <div
+              className="max-w-7xl mx-auto border-t border-spacing-6 py-4 mt-10 border-black  grid grid-cols-2 lg:grid-cols-4"
+              style={{ color: "#0066b3" }}
+            >
               <Link href="/media/latest-news">
-                <a className="text-lg font-bold text-blue-500 uppercase text-center">
+                <a className="text-lg font-bold uppercase text-center">
                   Latest News
                 </a>
               </Link>
               <Link href="/media/legislative-news">
-                <a className="text-lg font-bold text-blue-500 uppercase text-center">
+                <a className="text-lg font-bold uppercase text-center">
                   Legislative News
                 </a>
               </Link>
               <Link href="/media/press-releases">
-                <a className="text-lg font-bold text-blue-500 uppercase text-center">
+                <a className="text-lg font-bold uppercase text-center">
                   Press Releases
                 </a>
               </Link>
               <Link href="/media/stakeholder-news">
-                <a className="text-lg font-bold text-blue-500 uppercase text-center">
+                <a className="text-lg font-bold uppercase text-center">
                   Stakeholder News
                 </a>
               </Link>

@@ -23,24 +23,36 @@ console.log({open})
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
             onClick={() => setOpen(false)}
-            className="absolute z-40 top-0 left-0 right-0 w-screen bg-gray-600 shadow h-screen"
+            className="absolute z-40 top-0 left-0 right-0 w-2/3 md:w-1/2 bg-gray-600 shadow h-screen"
           >
             <FaTimes
               className="text-black h-12 w-12 absolute top-16 right-11"
               onClick={() => setOpen(false)}
             />
             <div className="flex text-white h-full text-xl flex-col items-center p-10 justify-around">
-              <Link href="/">Home</Link>
-              <Link href="/about">About</Link>
-              <Link href="/team">Team</Link>
-              <Link href="/media">Media</Link>
-              <Link href="/resources">Resources</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/">
+                <a className="hover:underline">Home</a>
+              </Link>
+              <Link href="/about">
+                <a className="hover:underline">About</a>
+              </Link>
+              <Link href="/team">
+                <a className="hover:underline">Team</a>
+              </Link>
+              <Link href="/media">
+                <a className="hover:underline">Media</a>
+              </Link>
+              <Link href="/resources">
+                <a className="hover:underline">Resources</a>
+              </Link>
+              <Link href="/contact">
+                <a className="hover:underline">Contact</a>
+              </Link>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="max-w-7xl mx-auto flex py-2 justify-between items-center px-4">
+      <div className="max-w-7xl mx-auto flex py-6 justify-between items-center px-4">
         <span
           onClick={() => setOpen(!open)}
           className="flex space-x-4 items-center cursor-pointer"
@@ -49,8 +61,8 @@ console.log({open})
           <p className="text-white text-xl">Menu</p>
         </span>
         <img
-          src="/images/maritime-cluster.png"
-          className="h-12 md:h-20 object-cover"
+          src="/images/logo.svg"
+          className="h-12 md:h-28 object-cover"
           alt="Logo"
         />
         <span

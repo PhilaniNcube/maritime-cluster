@@ -13,11 +13,11 @@ const Contact: NextPage = () => {
         <title>Contact | Maritime Cluster</title>
       </Head>
       <main
-        className="py-8 bg-center bg-cover bg-no-repeat min-h-screen"
-        style={{ backgroundImage: "url(/images/horizon.jpg)" }}
+        className="py-8 bg-center bg-cover bg-no-repeat bg-fixed min-h-screen"
+        style={{ backgroundImage: "url(/images/contact.jpg)" }}
       >
         <Navbar />
-        <div className="max-w-7xl mx-auto h-[80vh] border-t border-b border-white grid grid-cols-5">
+        <div className="max-w-7xl mx-auto h-[80vh] border-t border-b border-black grid grid-cols-5">
           <div className="col-span-5 md:col-span-3">
             <h1 className="text-3xl md:text-5xl mt-3 font-bold text-gray-700 uppercase">
               Contact Us

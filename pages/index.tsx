@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <title>Home | Maritime Cluster</title>
       </Head>
       <main
-        className="py-8 bg-center bg-cover bg-no-repeat min-h-screen bg-gray-700 bg-blend-multiply"
+        className="py-8 bg-center bg-cover bg-no-repeat min-h-screen bg-fixed bg-gray-500 bg-blend-multiply"
         style={{ backgroundImage: "url(/images/sea.jpg)" }}
       >
         <Navbar />
