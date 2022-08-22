@@ -73,9 +73,11 @@ const Media: NextPage = () => {
                   className="w-full h-64 object-cover"
                 />
                 <div className="bg-gray-200 px-3 py-4">
-                  <h3 className="text-blue-600 text-md font-bold">
-                    A wake-up call for ports to respond to climate change
-                  </h3>
+                  <Link href="http://maritimereview.co.za/article/ArtMID/450/ArticleID/1666">
+                    <a className="text-blue-600 text-md font-bold">
+                      A wake-up call for ports to respond to climate change
+                    </a>
+                  </Link>
                   <p className="mt-4 text-gray-800 text-sm">
                     The recent events of coastal flooding in the KwaZulu-Natal
                     province of South Africa in April 2022 should be regarded as
@@ -95,9 +97,11 @@ const Media: NextPage = () => {
                   className="w-full h-64 object-cover"
                 />
                 <div className="bg-gray-200 px-3 py-4">
-                  <h3 className="text-blue-600 text-md font-bold">
-                    Co-ocean management system to help protect resources
-                  </h3>
+                  <Link href="http://maritimereview.co.za/article/ArtMID/450/ArticleID/1692">
+                    <a className="text-blue-600 text-md font-bold">
+                      Co-ocean management system to help protect resources
+                    </a>
+                  </Link>
                   <p className="mt-4 text-gray-800 text-sm">
                     Despite declaring 42 marine protected areas (MPA) that cover
                     5.4 percent of the exclusive economic zone (EEZ), some of
@@ -115,9 +119,11 @@ const Media: NextPage = () => {
                   className="w-full h-64 object-cover"
                 />
                 <div className="bg-gray-200 px-3 py-4">
-                  <h3 className="text-blue-600 text-md font-bold">
-                    Master plan or merely promises
-                  </h3>
+                  <Link href="http://maritimereview.co.za/article/ArtMID/450/ArticleID/1692">
+                    <a className="text-blue-600 text-md font-bold">
+                      Master plan or merely promises
+                    </a>
+                  </Link>
                   <p className="mt-4 text-gray-800 text-sm">
                     The announcement of a Master Plan for the Port of Durban
                     this week should create a sense of relief especially as it

@@ -170,6 +170,14 @@ console.log(selectedId)
               </ul>
             </div>
           </div>
+          <h3 className="text-2xl text-center text-gray-700 font-bold mt-16 mb-2">
+            Strategy and Objecives
+          </h3>
+          <p className="text-lg px-8 text-center text-gray-700 font-medium mb-4">
+            The service offering and benefits to MBMC members and funders, will
+            arise from the implementation of the following strategic goals and
+            objectives
+          </p>
           <div className="max-w-7xl mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
             {cards.map((card) => (
               <div key={card.id} className="w-full cursor-pointer relative">

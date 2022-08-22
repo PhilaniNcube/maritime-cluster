@@ -23,12 +23,12 @@ console.log({open})
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
             onClick={() => setOpen(false)}
-            className="absolute z-40 top-0 left-0 right-0 w-2/3 md:w-1/2 bg-gray-600 shadow h-screen"
+            className="absolute z-40 top-0 left-0 right-0 w-2/3 md:w-1/4 bg-gray-600 shadow h-screen"
           >
-            <FaTimes
-              className="text-black h-12 w-12 absolute top-16 right-11"
+            <p
+              className="text-white text-5xl cursor-pointer absolute top-16 right-11 stroke-1 stroke-white"
               onClick={() => setOpen(false)}
-            />
+            >&times;</p>
             <div className="flex text-white h-full text-xl flex-col items-center p-10 justify-around">
               <Link href="/">
                 <a className="hover:underline">Home</a>
@@ -61,7 +61,7 @@ console.log({open})
           <p className="text-white text-xl">Menu</p>
         </span>
         <img
-          src="/images/logo.svg"
+          src="/images/maritime-cluster.png"
           className="h-12 md:h-28 object-cover"
           alt="Logo"
         />

@@ -17,7 +17,7 @@ const Team: NextPage = () => {
       <main className="py-8 bg-center bg-cover bg-no-repeat min-h-screen ">
         <BlackNavbar />
         <div className="max-w-7xl mx-auto flex flex-col justify-center min-h-[50vh] items-center border-t border-b border-black">
-          <div className="grid grid-cols-5 h-[50vh]  mb-5">
+          <div className="grid grid-cols-5 mb-5">
             <div className="col-span-5 md:col-span-2 relative">
               <div className="absolute z-30 top-0 right-0 flex justify-end p-6">
                 <h1 className="font-bold text-white text-3xl md:text-5xl lg:text-6xl">
@@ -30,7 +30,7 @@ const Team: NextPage = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="col-span-5 md:col-span-3 p-4 grid grid-cols-2 md:grid-cols-3 gap-4 overflow-y-scroll">
+            <div className="col-span-5 md:col-span-3 p-4 grid grid-cols-2 md:grid-cols-3 gap-4 ">
               <div className="w-full">
                 <Image
                   src="/images/faisal.jpeg"
