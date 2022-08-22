@@ -57,13 +57,13 @@ const Media: NextPage = () => {
                   Research & Publications
                 </a>
               </Link>
-              <Link href="/resources/regulatory">
-                <a className="text-lg font-bold  uppercase text-center">
+              <Link href="#">
+                <a className="text-lg font-bold uppercase text-center">
                   Regulatory
                 </a>
               </Link>
-              <Link href="/resources/documents">
-                <a className="text-lg font-bold  uppercase text-center">
+              <Link href="#">
+                <a className="text-lg font-bold uppercase text-center">
                   Public Documents
                 </a>
               </Link>

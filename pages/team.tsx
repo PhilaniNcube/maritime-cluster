@@ -31,30 +31,35 @@ const Team: NextPage = () => {
               />
             </div>
             <div className="col-span-5 md:col-span-3 p-4 grid grid-cols-2 md:grid-cols-3 gap-4 ">
-              <div className="w-full">
-                <Image
-                  src="/images/faisal.jpeg"
-                  alt="team member"
-                  className="aspect-square object-cover rounded w-full"
-                  width={500}
-                  height={500}
-                />
-                <p className="text-md text-gray-600">Captain Faisal Sultan</p>
-                <p className="text-blue-500 font-bold text-lg">Chairperson</p>
-              </div>
-              <div className="w-full">
-                <Image
-                  src="/images/derek.jpg"
-                  alt="team member"
-                  className="aspect-square object-cover object-top rounded w-full"
-                  width={500}
-                  height={500}
-                />
-                <p className="text-md text-gray-600">Mr Derek Zimmerman</p>
-                <p className="text-blue-500 font-bold text-lg">
-                  Deputy Chairperson
-                </p>
-              </div>
+                <Link href="/images/cpt_faisal_profile.pdf" passHref>
+                    <div className="w-full cursor-pointer">
+                      <Image
+                        src="/images/faisal.jpeg"
+                        alt="team member"
+                        className="aspect-square object-cover rounded w-full"
+                        width={500}
+                        height={500}
+                      />
+                      <p className="cursor-pointer text-md text-gray-600">Captain Faisal Sultan</p>
+                      <p className="text-blue-500 font-bold text-lg">Chairperson</p>
+                    </div>
+                </Link>
+                <Link href="/images/derek_profile.pptx">
+                    <div className="w-full cursor-pointer">
+                      <Image
+                        src="/images/derek.jpg"
+                        alt="team member"
+                        className="aspect-square object-cover object-top rounded w-full"
+                        width={500}
+                        height={500}
+                        />
+                      <p className="text-md text-gray-600">Mr Derek Zimmerman</p>
+                      <p className="text-blue-500 font-bold text-lg">
+                        Deputy Chairperson
+                      </p>
+                    </div>
+                  </Link>
+
               <div className="w-full">
                 <Image
                   src="/images/odwa.jpg"
@@ -62,10 +67,11 @@ const Team: NextPage = () => {
                   className="aspect-square object-cover rounded w-full"
                   width={500}
                   height={500}
-                />
+                  />
                 <p className="text-md text-gray-600">Mr Odwa Mtati</p>
                 <p className="text-blue-500 font-bold text-lg">Board Member</p>
               </div>
+
               <div className="w-full">
                 <Image
                   src="/images/person_6.jpg"
@@ -77,17 +83,19 @@ const Team: NextPage = () => {
                 <p className="text-md text-gray-600">Mr John Lawlor </p>
                 <p className="text-blue-500 font-bold text-lg">Board Member</p>
               </div>
-              <div className="w-full">
-                <Image
-                  src="/images/person_2.jpg"
-                  alt="team member"
-                  className="aspect-square object-cover rounded w-full"
-                  width={500}
-                  height={500}
-                />
-                <p className="text-md text-gray-600">Mr Lusanda Fibi </p>
-                <p className="text-blue-500 font-bold text-lg">Board Member</p>
-              </div>
+              <Link href="/images/lusanda_profile.docx">
+                  <div className="w-full cursor-pointer">
+                    <Image
+                      src="/images/person_2.jpg"
+                      alt="team member"
+                      className="aspect-square object-cover rounded w-full"
+                      width={500}
+                      height={500}
+                      />
+                    <p className="text-md text-gray-600">Mr Lusanda Fibi </p>
+                    <p className="text-blue-500 font-bold text-lg">Board Member</p>
+                  </div>
+              </Link>
               <div className="w-full">
                 <Image
                   src="/images/person_6.jpg"

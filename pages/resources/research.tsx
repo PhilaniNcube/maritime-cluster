@@ -55,12 +55,12 @@ const Media: NextPage = () => {
                   Research & Publications
                 </a>
               </Link>
-              <Link href="/resources/regulatory">
+              <Link href="#">
                 <a className="text-lg font-bold text-gray-500 uppercase text-center">
                   Regulatory
                 </a>
               </Link>
-              <Link href="/resources/documents">
+              <Link href="#">
                 <a className="text-lg font-bold text-gray-500 uppercase text-center">
                   Public Documents
                 </a>
@@ -87,19 +87,21 @@ const Media: NextPage = () => {
                         target="_blank"
                         rel="noopener"
                       >
-                        View Document
+                        <a className="font-bold my-2 py-2 px-6 bg-sky-200 rounded text-gray-800">
+                          View Document
+                        </a>
                       </Link>
                     </Disclosure.Panel>
-
                   </Fragment>
                 )}
               </Disclosure>
               <Disclosure>
                 {({ open }) => (
                   <Fragment>
-                    <Disclosure.Button className="bg-gray-200 text-gray-700 flex items-center space-x-6 mt-3 rounded px-5 py-2">
+                    <Disclosure.Button className="bg-gray-200 mt-3 text-gray-700 flex items-center space-x-6 rounded px-5 py-2">
                       <span className="font-bold">
-                       Journal Papers
+                        The Ocean Economy of the Bay, & Local Maritime
+                        Opportunities
                       </span>
                       <ChevronUpIcon
                         className={`${
@@ -109,9 +111,37 @@ const Media: NextPage = () => {
                     </Disclosure.Button>
 
                     <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure harum eius porro quaerat tempora illum asperiores pariatur soluta? Doloremque pariatur nobis praesentium necessitatibus natus rerum?
+                      <Link
+                        href="/images/vladivostok.pdf"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <a className="font-bold my-2 py-2 px-6 bg-sky-200 rounded text-gray-800">
+                          View Document
+                        </a>
+                      </Link>
                     </Disclosure.Panel>
+                  </Fragment>
+                )}
+              </Disclosure>
+              <Disclosure>
+                {({ open }) => (
+                  <Fragment>
+                    <Disclosure.Button className="bg-gray-200 text-gray-700 flex items-center space-x-6 mt-3 rounded px-5 py-2">
+                      <span className="font-bold">Journal Papers</span>
+                      <ChevronUpIcon
+                        className={`${
+                          open ? "rotate-180 transform" : ""
+                        } h-5 w-5 text-gray-500 transition-all duration`}
+                      />
+                    </Disclosure.Button>
 
+                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Iure harum eius porro quaerat tempora illum asperiores
+                      pariatur soluta? Doloremque pariatur nobis praesentium
+                      necessitatibus natus rerum?
+                    </Disclosure.Panel>
                   </Fragment>
                 )}
               </Disclosure>
@@ -120,7 +150,7 @@ const Media: NextPage = () => {
                   <Fragment>
                     <Disclosure.Button className="bg-gray-200 text-gray-700 flex items-center space-x-6 mt-3 rounded px-5 py-2">
                       <span className="font-bold">
-                   International Conferences
+                        International Conferences
                       </span>
                       <ChevronUpIcon
                         className={`${
@@ -130,9 +160,10 @@ const Media: NextPage = () => {
                     </Disclosure.Button>
 
                     <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ab distinctio aperiam impedit voluptatibus doloremque accusamus optio voluptate praesentium animi.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore ab distinctio aperiam impedit voluptatibus
+                      doloremque accusamus optio voluptate praesentium animi.
                     </Disclosure.Panel>
-
                   </Fragment>
                 )}
               </Disclosure>
