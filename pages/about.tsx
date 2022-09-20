@@ -112,8 +112,8 @@ console.log(selectedId)
         <title>About | Maritime Cluster</title>
       </Head>
       <main className="py-8 min-h-screen ">
-        <BlackNavbar />
-        <div className="max-w-7xl mx-auto items-center border-t border-b border-black">
+
+        <div className="max-w-7xl mx-auto items-center  border-b border-black">
           <div className="grid grid-cols-5">
             <div className="col-span-5 md:col-span-2 relative">
               <div className="absolute inset-0 flex justify-end p-6">

@@ -15,8 +15,8 @@ const Team: NextPage = () => {
         <title>Team | Maritime Cluster</title>
       </Head>
       <main className="py-8 bg-center bg-cover bg-no-repeat min-h-screen ">
-        <BlackNavbar />
-        <div className="max-w-7xl mx-auto flex flex-col justify-center min-h-[50vh] items-center border-t border-b border-black">
+
+        <div className="max-w-7xl mx-auto flex flex-col justify-center min-h-[50vh] items-center  border-b border-black">
           <div className="grid grid-cols-5 mb-5">
             <div className="col-span-5 md:col-span-2 relative">
               <div className="absolute z-30 top-0 right-0 flex justify-end p-6">

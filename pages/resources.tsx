@@ -15,7 +15,7 @@ const Media: NextPage = () => {
         <title>Useful Resources | Maritime Cluster</title>
       </Head>
       <main className="py-8 min-h-screen ">
-        <BlackNavbar />
+
         <div className="max-w-7xl mx-auto items-center border-t border-b border-black">
           <div className="grid grid-cols-5">
             <div className="col-span-5 grid grid-cols-2 relative">
@@ -39,7 +39,7 @@ const Media: NextPage = () => {
           </div>
           <div className="max-w-7xl mx-auto">
             <div
-              className="max-w-7xl mx-auto border-t border-spacing-6 py-4 mt-10 border-black  grid grid-cols-2 lg:grid-cols-5"
+              className="max-w-7xl mx-auto  border-spacing-6 py-4 mt-10 border-black  grid grid-cols-2 lg:grid-cols-5"
               style={{ color: "#0066b3" }}
             >
               <Link href="/resources/gallery">

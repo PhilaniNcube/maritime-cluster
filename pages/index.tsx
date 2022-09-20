@@ -16,8 +16,8 @@ const Home: NextPage = () => {
         className="py-8 bg-center bg-cover bg-no-repeat min-h-screen bg-fixed bg-gray-500 bg-blend-multiply"
         style={{ backgroundImage: "url(/images/sea.jpg)" }}
       >
-        <Navbar />
-        <div className="max-w-7xl mx-auto flex flex-col justify-center h-[80vh] items-center border-t border-b border-white">
+
+        <div className="max-w-7xl mx-auto flex flex-col justify-center h-[80vh] items-center  border-b border-white">
           <h1 className="text-3xl md:text-5xl max-w-5xl text-white text-center font-extrabold">
             Delivering opportunities in South Africa&apos;s Maritime industry
           </h1>

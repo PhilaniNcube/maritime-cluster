@@ -15,8 +15,8 @@ const Gallery: NextPage = () => {
         <title>Useful Resources | Maritime Cluster</title>
       </Head>
       <main className="py-8 min-h-screen ">
-        <BlackNavbar />
-        <div className="max-w-7xl mx-auto items-center border-t border-b border-black">
+
+        <div className="max-w-7xl mx-auto items-center  border-b border-black">
           <div className="grid grid-cols-5">
             <div className="col-span-5 grid grid-cols-2 relative">
               <div className="absolute w-1/2 inset-0 flex flex-col items-end bg-slate-800/70 p-3">

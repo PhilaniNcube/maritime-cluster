@@ -14,7 +14,7 @@ const [open, setOpen] = useState(false)
 console.log({open})
 
   return (
-    <nav className="">
+    <nav className="bg-white">
       <AnimatePresence exitBeforeEnter>
         {open && (
           <motion.div
@@ -28,7 +28,9 @@ console.log({open})
             <p
               className="text-white text-5xl cursor-pointer absolute top-16 right-11 stroke-1 stroke-white"
               onClick={() => setOpen(false)}
-            >&times;</p>
+            >
+              &times;
+            </p>
             <div className="flex text-white h-full text-xl flex-col items-center p-10 justify-around">
               <Link href="/">
                 <a className="hover:underline">Home</a>
@@ -53,24 +55,46 @@ console.log({open})
         )}
       </AnimatePresence>
       <div className="max-w-7xl mx-auto flex py-6 justify-between items-center px-4">
-        <span
-          onClick={() => setOpen(!open)}
-          className="flex space-x-4 items-center cursor-pointer"
-        >
-          <Menu />
-          <p className="text-white text-xl">Menu</p>
-        </span>
         <img
           src="/images/maritime-cluster.png"
           className="h-12 md:h-28 object-cover"
           alt="Logo"
         />
         <span
+          onClick={() => setOpen(!open)}
+          className="flex md:hidden space-x-4 items-center cursor-pointer"
+        >
+          <Menu />
+          <p className="text-black text-xl">Menu</p>
+        </span>
+
+        <div className="hidden md:flex items-center space-x-3">
+          <Link href="/">
+            <a className="hover:underline">Home</a>
+          </Link>
+          <Link href="/about">
+            <a className="hover:underline">About</a>
+          </Link>
+          <Link href="/team">
+            <a className="hover:underline">Team</a>
+          </Link>
+          <Link href="/media">
+            <a className="hover:underline">Media</a>
+          </Link>
+          <Link href="/resources">
+            <a className="hover:underline">Resources</a>
+          </Link>
+          <Link href="/contact">
+            <a className="hover:underline">Contact</a>
+          </Link>
+        </div>
+
+        <span
           onClick={() => router.push("/contact")}
-          className="hidden md:flex cursor-pointer justify-center items-center border-2 border-white rounded-full px-4 py-1"
+          className="hidden md:flex cursor-pointer justify-center items-center border border-black rounded-full px-4 py-1"
         >
           <Mail />
-          <button className=" text-white text-md ml-3">Get In Touch</button>
+          <button className=" text-black text-md ml-3">Get In Touch</button>
         </span>
       </div>
     </nav>
@@ -85,7 +109,7 @@ const Menu = () => {
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-8 w-8 text-white border border-white rounded-full p-1 rotate-90"
+      className="h-8 w-8 text-black border border-black rounded-full p-1"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -106,7 +130,7 @@ const Mail = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6 text-white"
+      className="h-6 w-6 text-black"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
