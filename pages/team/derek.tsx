@@ -29,7 +29,7 @@ const Derek = () => {
               width={1154}
               height={1731}
             />
-            <div className="w-full px-6">
+            <div className="w-full px-6 text-slate-800">
               <h1 className="text-2xl text-slate-600 font-medium">
                 Derek Zimmerman
               </h1>
