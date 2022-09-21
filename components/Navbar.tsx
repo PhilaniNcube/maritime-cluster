@@ -54,10 +54,10 @@ console.log({open})
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="max-w-7xl mx-auto flex py-6 justify-between items-center px-4">
+      <div className="max-w-7xl mx-auto flex  py-6 justify-between items-center  px-4">
         <img
           src="/images/maritime-cluster.png"
-          className="h-12 md:h-28 object-cover"
+          className="h-12 md:h-20 object-cover"
           alt="Logo"
         />
         <span
@@ -68,34 +68,33 @@ console.log({open})
           <p className="text-black text-xl">Menu</p>
         </span>
 
-        <div className="hidden md:flex items-center space-x-3">
+        <div className="hidden md:flex items-center justify-around w-full">
           <Link href="/">
-            <a className="hover:underline">Home</a>
+            <a className="px-5 py-2 hover:bg-slate-300 uppercase text-xl cursor-pointer">Home</a>
           </Link>
           <Link href="/about">
-            <a className="hover:underline">About</a>
+            <a className="px-5 py-2 hover:bg-slate-300 uppercase text-xl cursor-pointer">About</a>
           </Link>
           <Link href="/team">
-            <a className="hover:underline">Team</a>
+            <a className="px-5 py-2 hover:bg-slate-300 uppercase text-xl cursor-pointer">Team</a>
           </Link>
           <Link href="/media">
-            <a className="hover:underline">Media</a>
+            <a className="px-5 py-2 hover:bg-slate-300 uppercase text-xl cursor-pointer">Media</a>
           </Link>
           <Link href="/resources">
-            <a className="hover:underline">Resources</a>
+            <a className="px-5 py-2 hover:bg-slate-300 uppercase text-xl cursor-pointer">Resources</a>
           </Link>
           <Link href="/contact">
-            <a className="hover:underline">Contact</a>
+            <a className="px-5 py-2 hover:bg-slate-300 uppercase text-xl cursor-pointer">Contact</a>
           </Link>
         </div>
-
-        <span
+        {/**<span
           onClick={() => router.push("/contact")}
           className="hidden md:flex cursor-pointer justify-center items-center border border-black rounded-full px-4 py-1"
         >
           <Mail />
           <button className=" text-black text-md ml-3">Get In Touch</button>
-        </span>
+        </span>* */}
       </div>
     </nav>
   );

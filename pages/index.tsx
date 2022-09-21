@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           <h1 className="text-3xl md:text-5xl max-w-5xl text-white text-center font-extrabold">
             Delivering opportunities in South Africa&apos;s Maritime industry
           </h1>
-          <Link href="/contact" passHref>
+          <Link href="/resources" passHref>
             <button className="bg-blue-300 text-sky-900 font-bold text-xl px-6 py-1 rounded-full mt-16">
               Learn more
             </button>
