@@ -45,7 +45,7 @@ const Team: NextPage = () => {
                   <p className="text-blue-500 font-bold text-lg">Chairperson</p>
                 </div>
               </Link>
-              <Link href="/images/derek_profile.pptx">
+              <Link href="/team/derek">
                 <div className="w-full cursor-pointer">
                   <Image
                     src="/images/derek.jpg"
